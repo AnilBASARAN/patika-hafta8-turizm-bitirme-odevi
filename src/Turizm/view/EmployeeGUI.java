@@ -70,6 +70,7 @@ public class EmployeeGUI extends Layout {
     private JButton gun_button;
     private JButton silbutton;
     private JScrollPane res_panel;
+    private JPanel pnl_search;
     DefaultTableModel mdl_rezervations;
     private Object[] row_rezervations;
 
@@ -657,8 +658,6 @@ public class EmployeeGUI extends Layout {
         }
     }
 
-    public static void main(String[] args) {
-        EmployeeGUI employeeGUI = new EmployeeGUI(new User(1,"64565465412","bttoy","a4","Batuhan","Toy","employee"));
-    }
+
 
 }

@@ -242,7 +242,7 @@ public class EmployeeHotelDetailGUI extends Layout {
             }
 
         });
-        // Değerlendirme Formu 11
+        //  Form 11
         // Adding hotel room
         btn_addHotelRoom.addActionListener(e -> {
             loadRoomSeasonCombobox();

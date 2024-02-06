@@ -24,6 +24,7 @@ public class AdminGUI extends Layout {
     private JComboBox cmb_userType;
     private JButton btn_addUser;
     private JTextField txt_password;
+    private JButton silButton;
     private User admin;
 
     public AdminGUI(User admin) {
@@ -90,6 +91,14 @@ public class AdminGUI extends Layout {
                     loadPersonelTable();
                     Helper.s_Msg("Başarılı", "Kullanıcı eklendi");
                 }
+            }
+        });
+        silButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                // kullanıcı silme işlemi
+                adminManager.deleteUser(Integer.parseInt(tbl_personel.getValueAt(tbl_personel.getSelectedRow(), 0).toString()));
+                loadPersonelTable();
             }
         });
     }
