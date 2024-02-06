@@ -7,6 +7,8 @@ import Turizm.entity.*;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.time.LocalDate;
@@ -52,6 +54,7 @@ public class EmployeeHotelDetailGUI extends Layout {
     // Tesis Özellikleri - START
     private JTable tbl_room;
     private JTextField txt_room_price_adult;
+    private JButton silButton;
     private JPopupMenu tbl_room_popup;
     DefaultTableModel mdl_room;
     private Object[] row_room;
@@ -262,6 +265,12 @@ public class EmployeeHotelDetailGUI extends Layout {
 
                     Helper.s_Msg("Başarılı","Ekleme işlemi Başarılı");
                 }
+            }
+        });
+        silButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                detailManager.deleteRoom(hotel.getHotelID());
             }
         });
     }
