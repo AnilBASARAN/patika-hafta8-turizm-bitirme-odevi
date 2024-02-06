@@ -63,7 +63,11 @@ public class Hotel {
     }
 
     public int getHotelStars() {
-        return hotelStars;
+        if(this.hotelStars == 1 || this.hotelStars == 2 || this.hotelStars == 3 || this.hotelStars == 4 || this.hotelStars == 5){
+            return hotelStars;
+        }else{
+            return 3;
+        }
     }
 
     public void setHotelStars(int hotelStars) {
