@@ -57,7 +57,8 @@ public class EmployeeManager{
         String query = "SELECT s.season_name,s.start_date,s.end_date,h.hotel_id,h.name,h.city,h.region,h.address,h.email,h.phoneNumber,h.stars,r.season_id,r.pension_id,r.room_id,r.room_type,r.bed_number,r.stock,r.price_child,r.price_adult\n" +
                 "FROM tbl_season AS s\n" +
                 "INNER JOIN tbl_hotel_room AS r ON s.season_id = r.season_id\n" +
-                "INNER JOIN tbl_hotel AS h ON r.hotel_id = h.hotel_id\n";
+                "INNER JOIN tbl_hotel AS h ON r.hotel_id = h.hotel_id\n"+
+                "WHERE r.stock > 0\n";
         return employeeRepository.search(query);
     }
 

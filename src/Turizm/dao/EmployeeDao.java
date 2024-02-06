@@ -119,7 +119,7 @@ public class EmployeeDao {
                 "FROM tbl_season AS s \n" +
                 "INNER JOIN tbl_hotel_room AS r ON s.season_id = r.season_id\n" +
                 "INNER JOIN tbl_hotel AS h ON r.hotel_id = h.hotel_id\n" +
-                "WHERE (h.name LIKE '%{{hotel}}%' OR h.city LIKE '%{{city}}%' OR h.region LIKE '%{{region}}%') AND r.bed_number>={{bedNumber}}";
+                "WHERE (h.name LIKE '%{{hotel}}%' OR h.city LIKE '%{{city}}%' OR  h.region LIKE '%{{region}}%') AND r.bed_number>={{bedNumber}} AND r.stock > 0";
 
         query = query.replace("{{hotel}}",hotelName);
         query = query.replace("{{city}}",city);
