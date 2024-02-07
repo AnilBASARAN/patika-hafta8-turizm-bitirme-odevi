@@ -404,7 +404,10 @@ public class EmployeeGUI extends Layout {
                     Integer.parseInt(cmb_adultNumber.getSelectedItem().toString()),
                     totalPrice,
                     child_price,
-                    adult_price
+                    adult_price,
+                    txt_startDate.getText(),
+                    txt_endDate.getText(),
+                    days
             );
         });
 

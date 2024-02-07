@@ -18,18 +18,26 @@ public class ReservationGUI extends Layout {
     private JLabel adult_sayisi;
     private JLabel yetiskin_fyt;
     private JLabel cocuk_fyt;
+    private JLabel grs_tarih;
+    private JLabel cks_tarih;
+    private JLabel gn_sayisi;
+    private JLabel extra_tab;
 
 
-    public ReservationGUI(EmployeeGUI gui, EmployeeManager repository, int hotelID, int roomID, int childNumber, int adultNumber, int totalPrice,int childPrice, int adultPrice) {
+    public ReservationGUI(EmployeeGUI gui, EmployeeManager repository, int hotelID, int roomID, int childNumber, int adultNumber, int totalPrice, int childPrice, int adultPrice, String startDate, String endDate, int days) {
         add(wrapper);
         setGUILayout(500,500);
         this.repository = repository;
-
+        gn_sayisi.setText(String.valueOf(days));
         txt_totalPrice.setText(String.valueOf(totalPrice));
         cocuk_number.setText(String.valueOf(childNumber));
         adult_sayisi.setText(String.valueOf(adultNumber));
         cocuk_fyt.setText(String.valueOf(childPrice));
         yetiskin_fyt.setText(String.valueOf(adultPrice));
+        grs_tarih.setText((startDate));
+        cks_tarih.setText((endDate));
+
+
 
 
 
