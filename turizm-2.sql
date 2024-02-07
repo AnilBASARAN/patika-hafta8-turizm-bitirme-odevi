@@ -67,9 +67,9 @@ CREATE TABLE `tbl_hotel` (
 --
 
 INSERT INTO `tbl_hotel` (`hotel_id`, `name`, `city`, `region`, `address`, `email`, `phoneNumber`, `stars`) VALUES
-(1, 'ABANA TATİLYA RESORT OTEL', 'KASTAMONU', 'ABANA', 'Şahkulu, Şişhane Metro Durağı, Meşrutiyet Cd. No:125, 34421', 'info@kodluyoruz.org', '02122561423', 5),
-(2, 'Diamond the resort sapanca', 'istanbul', 'Sapanca', 'Nilüfer kanalıcı mahallesi No:14', 'blkotel@gmail.com', '05564123259', 3),
-(6, 'ABANT ADENBOUTIQUE HOTEL&SPA', 'ISTANBUL ', 'DALAMAN', 'Soğanlı, Nilüfer Cd. 89/A, 16190', 'bursaotel@gmail.com', '777', 3),
+(1, 'RESORT OTEL', 'KASTAMONU', 'ABANA', 'adress1', 'mail@com', '012312333, 5),
+(2, 'Diamond the resort sapanca', 'istanbul', 'Sapanca', 'adress2', 'blkotel@gmail.com', '05564123259', 3),
+(6, 'ABANT ADENBOUTIQUE HOTEL&SPA', 'ISTANBUL ', 'DALAMAN', 'Sokal1. 89/A, 16190', 'aotel@gmail.com', '777', 3),
 (21, 'ABANT ADENBOUTIQUE HOTEL&SPA', 'ISTANBUL ', 'DALAMAN', 'Soğanlı, Nilüfer Cd. 89/A, 16190', 'bursaotel@gmail.com', '888', 3),
 (23, 'ABANT ADENBOUTIQUE HOTEL&SPA', 'ISTANBUL ', 'DALAMAN', 'Soğanlı, Nilüfer Cd. 89/A, 16190', 'bursaotel@gmail.com', '777', 3),
 (31, 'ABANT ADENBOUTIQUE HOTEL&SPA', 'ISTANBUL ', 'DALAMAN', 'Soğanlı, Nilüfer Cd. 89/A, 16190', 'bursaotel@gmail.com', '777', 20),
