@@ -24,8 +24,6 @@ public class LoginGUI extends Layout {
             e.printStackTrace();
         }
 
-
-        SwingUtilities.invokeLater(() -> {
             add(wrapper);
             setGUILayout(350, 250);
 
@@ -43,7 +41,7 @@ public class LoginGUI extends Layout {
                     }
                 }
             });
-        });
+
 
         pass_show.addActionListener(e -> { //parolayı göstermeye yarayacak.
             if (pass_show.isSelected()){
